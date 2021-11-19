@@ -8,6 +8,12 @@ class ModelPessoa{
 
     public function __construct($conn){
 
+        //PERMITE RECEBER DADOS JSON ATRÁVES DA REQUISIÇÃO
+        $json = file_get_contents("php://input");
+        $dadosPessoa = json_decode($json);
+
+        $this->_codPessoa = $dadosPessoa->cod_pessoa;
+
         $this->_conn = $conn;
     }
 
