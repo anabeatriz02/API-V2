@@ -13,6 +13,10 @@ $conn = new Connection();
 $model = new ModelPessoa($conn->returnConnection());
 $controller = new ControllerPessoa($model);
 
+$dados = $controller->router();
+
+echo json_encode(array("status"=>"Success", "data"=>$dados));
+
 
 
 ?>
