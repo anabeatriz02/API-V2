@@ -3,11 +3,11 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
-header("Content-type: application/json");
+header("Content-Type: application/json");
 
 include('../Connection.php');
 include('../model/ModelPessoa.php');
-include('../controlle/ControllerPessoa.php');
+include('../controller/ControllerPessoa.php');
 
 $conn = new Connection();
 $model = new ModelPessoa($conn->returnConnection());
