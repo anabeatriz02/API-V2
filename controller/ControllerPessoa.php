@@ -32,7 +32,7 @@ class ControllerPessoa{
                 break;
 
             case 'POST':
-                # code...
+                return $this->_modelPessoa->create();
                 break;
                     
             case 'PUT':

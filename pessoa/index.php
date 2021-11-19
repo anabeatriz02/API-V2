@@ -9,6 +9,7 @@ include('../Connection.php');
 include('../model/ModelPessoa.php');
 include('../controller/ControllerPessoa.php');
 
+// echo 'teste';exit;
 $conn = new Connection();
 $model = new ModelPessoa($conn->returnConnection());
 $controller = new ControllerPessoa($model);
