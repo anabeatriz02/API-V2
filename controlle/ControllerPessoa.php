@@ -15,7 +15,20 @@ class ControllerPessoa{
     function router(){
 
         switch ($this->_method) {
-            case 'value':
+
+            case 'GET':
+                return $this->_modelPessoa->findAll();
+                break;
+
+            case 'POST':
+                # code...
+                break;
+
+            case 'PUT':
+                # code...
+                break;
+
+            case 'DELETE':
                 # code...
                 break;
             
