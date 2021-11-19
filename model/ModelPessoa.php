@@ -21,7 +21,7 @@ class ModelPessoa{
         $stm->execute();
 
         //DEVOLVE OS VALORES DA SELECT PARA SEREM UTILIZADOS
-        return $stm->fetchAll();
+        return $stm->fetchAll(PDO::FETCH_ASSOC);
     }
 }
 

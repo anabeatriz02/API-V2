@@ -11,6 +11,19 @@ class ControllerPessoa{
         $this->_method = $_SERVER['REQUEST_METHOD'];
         
     }
+
+    function router(){
+
+        switch ($this->_method) {
+            case 'value':
+                # code...
+                break;
+            
+            default:
+                # code...
+                break;
+        }
+    }
 }
 
 ?>
